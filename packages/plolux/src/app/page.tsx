@@ -1,6 +1,9 @@
 import Image from "next/image";
 import NextLogo from "../assets/next.svg";
 import VercelLogo from "../assets/vercel.svg";
+import File from "public/file.svg";
+import Globe from "public/globe.svg";
+import Window from "public/window.svg";
 
 export default function Home() {
   return (
@@ -10,6 +13,30 @@ export default function Home() {
           className="dark:invert"
           src={NextLogo}
           alt="Next.js logo"
+          width={100}
+          height={20}
+          priority
+        />
+        <Image
+          className="dark:invert"
+          src={File}
+          alt="File"
+          width={100}
+          height={20}
+          priority
+        />
+        <Image
+          className="dark:invert"
+          src={Globe}
+          alt="Globe"
+          width={100}
+          height={20}
+          priority
+        />
+        <Image
+          className="dark:invert"
+          src={Window}
+          alt="Window"
           width={100}
           height={20}
           priority
