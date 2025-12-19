@@ -43,7 +43,7 @@ jobs:
   build-and-deploy:
     name: 빌드 및 배포
     needs: changes
-    # 실행 조건: 
+    # 실행 조건:
     # 1. [no-deploy] 태그가 없을 것
     # 2. plolux 패키지가 변경되었거나, [deploy:plolux] 또는 [deploy:all] 태그가 있을 때
     if: |
@@ -110,7 +110,7 @@ jobs:
       - name: plolux 패키지 빌드
         run: |
           echo "🚀 Building plolux..."
-          pnpm --filter plolux build
+          DEPLOY_TARGET=gh-pages pnpm --filter plolux build
           echo "✅ plolux build complete."
 
       - name: plolux 빌드 결과물을 'staging'으로 복사
