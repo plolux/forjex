@@ -108,9 +108,11 @@ jobs:
       # plolux 빌드 및 복사
       # -------------------------------------------------------------
       - name: plolux 패키지 빌드
+        env:
+          DEPLOY_TARGET: gh-pages
         run: |
           echo "🚀 Building plolux..."
-          DEPLOY_TARGET=gh-pages pnpm --filter plolux build
+          pnpm --filter plolux build
           echo "✅ plolux build complete."
 
       - name: plolux 빌드 결과물을 'staging'으로 복사
