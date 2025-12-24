@@ -2,7 +2,7 @@
 
 .guideContainer {
   padding: 40px;
-  background-color: v.$color-bg-light;
+  background-color: v.$background-color;
   min-height: 100vh;
 }
 
@@ -14,8 +14,8 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 24px;
-  color: v.$color-text-dark;
-  border-bottom: 2px solid v.$color-primary;
+  color: v.$text-main;
+  border-bottom: 2px solid v.$primary-color;
   padding-bottom: 12px;
 }
 
@@ -30,7 +30,7 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  border: 1px solid #eee;
+  border: 1px solid v.$border-color;
 
   .preview {
     height: 120px;
@@ -43,20 +43,18 @@
     .name {
       font-weight: bold;
       margin-bottom: 4px;
-      color: v.$color-text-dark;
+      color: v.$text-main;
     }
     
     .hex {
       font-size: 0.9rem;
-      color: v.$color-text-gray;
+      color: v.$text-sub;
     }
   }
 }
 
 // Color Utility Classes for Preview
-.bgPrimary { background-color: v.$color-primary; }
-.bgSecondary { background-color: v.$color-secondary; }
-.bgPrimaryPale { background-color: v.$color-primary-pale; }
-.bgTextDark { background-color: v.$color-text-dark; }
-.bgTextGray { background-color: v.$color-text-gray; }
-.bgBgLight { background-color: v.$color-bg-light; border: 1px solid #ddd; }
+.bgPrimary { background-color: v.$primary-color; }
+.bgSecondary { background-color: v.$secondary-color; }
+.bgTextMain { background-color: v.$text-main; }
+.bgTextSub { background-color: v.$text-sub; }
