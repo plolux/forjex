@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './Header.module.scss';
-import { Button } from '@/components/atomic/Button'; // Assuming Button atom exists or I will create standard button
+
 
 export default function Header() {
   return (
