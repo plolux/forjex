@@ -135,8 +135,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'staging'
-          name: github-pages
-          retention-days: 1
 
       - name: GitHub Pages에 배포
         id: deployment
