@@ -156,9 +156,8 @@ jobs:
       - name: Sync App to Plolux Repo
         uses: s0/git-publish-subdir-action@develop
         env:
-          REPO: self
+          REPO: plolux/plolux-web # Correct Target Repository
           BRANCH: main
-          FOLDER: packages/plolux # Source folder in Monorepo
+          FOLDER: packages/plolux
           GITHUB_TOKEN: ${{ secrets.PLOLUX_SYNC_TOKEN }}
-          TARGET_REPO: Plolux-Corp/plolux-web # Target Destination
           MESSAGE: 'Ship: Plolux Engine Update ({sha})'
